@@ -1,0 +1,25 @@
+.sort {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 40px;
+
+  svg {
+    margin-right: 8px;
+  }
+  .sortTitle {
+    margin-right: 8px;
+  }
+
+  .modal {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+    position: absolute;
+    right: 0;
+  }
+
+  p {
+    margin: 0;
+  }
+}
