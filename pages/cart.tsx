@@ -1,5 +1,6 @@
 import Link from "next/link";
 import {Button} from "../components";
+import {Header} from "../layout/Header/Header";
 
 
 const Cart = (): JSX.Element => {

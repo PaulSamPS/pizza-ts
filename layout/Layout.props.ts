@@ -1,5 +1,6 @@
 import {ReactNode} from "react"
 
-export interface CategoriesProps {
+
+export interface LayoutProps {
     children: ReactNode
 }

@@ -1,2 +1,2 @@
 export * from './Button/Button'
-export * from '../PageComponents/Categories/Categories'
+export * from '../layout/Categories/Categories'
