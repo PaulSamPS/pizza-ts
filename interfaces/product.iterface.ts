@@ -4,7 +4,10 @@ export interface ProductModel {
     name: string
     desc: string
     types: number[]
+<<<<<<< HEAD
     availableTypes: string[]
+=======
+>>>>>>> dca501073ad3b75aefab25a7adeb48577a1569f7
     sizes: number[]
     price: number
     category: number
