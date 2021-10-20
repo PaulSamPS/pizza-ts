@@ -1,6 +1,5 @@
 html,
 body {
-<<<<<<< HEAD
 	margin: 0;
 	padding: 0;
 
@@ -68,66 +67,4 @@ a {
 	--green: #127A4F;
 	--green-light: #C8F8E4;
 	--font-family: 'Open Sans', sans-serif;
-=======
-  margin: 0;
-  padding: 0;
-
-  color: var(--black);
-  background: #FFDF8C;
-
-  font-family: 'Noto Sans Display', sans-serif;
-}
-
-a {
-  text-decoration: none;
-
-  color: inherit;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-.wrapper {
-  background-color: var(--white);
-  margin: 0 auto;
-  border-radius: 10px;
-  max-width: 1400px;
-}
-
-.flex {
-  display: flex;
-  justify-content: space-between;
-}
-.logos {
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 1px solid #efefef;
-  padding: 40px;
-
-  @media screen and (max-width: 500px){
-    flex-wrap: wrap;
-    gap: 30px;
-  }
-}
-
-.logoCart {
-  padding: 40px;
-  display: flex;
-  border-bottom: 1px solid #efefef;
-}
-:root {
-  --black: #282828;
-  --gray-light: #D3D3D3;
-  --gray: #A4A4A4;
-  --gray-dark: #F9F9F9;
-  --white: white;
-  --primary: #FE5F1E;
-  --primary-hover: #fd7348;
-  --red: #FC836D;
-  --red-light: #F5A69A;
-  --green: #127A4F;
-  --green-light: #C8F8E4;
-  --font-family: 'Noto Sans Display', sans-serif;
->>>>>>> dca501073ad3b75aefab25a7adeb48577a1569f7
 }

@@ -1,5 +1,5 @@
-import {MainPageComponentProps} from "./MainPageComponent.props";
-import {Product} from "../../components";
+import {MainPageComponentProps} from "./MainPageComponent.props"
+import {Product} from "../../components"
 import styles from './MainPageComponent.module.scss'
 
 

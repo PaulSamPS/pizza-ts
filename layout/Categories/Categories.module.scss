@@ -1,5 +1,4 @@
 .categories {
-<<<<<<< HEAD
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -43,46 +42,3 @@
 		}
 	}
 }
-=======
-  padding: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  .categoryBlock {
-    display: flex;
-
-    .category {
-      margin-right: 10px;
-    }
-  }
-
-  .sort {
-    text-align: center;
-  }
-
-  .activeBlack {
-    background: var(--black);
-    color: var(--white);
-  }
-}
-
-@media screen and (max-width: 850px) {
-  .categories {
-    .categoryBlock {
-      display: none;
-    }
-  }
-  @media screen and (max-width: 500px) {
-    .categories {
-      justify-content: center;
-    }
-  }
-  @media screen and (max-width: 350px) {
-    .categories {
-      padding: 30px;
-    }
-  }
-
-}
->>>>>>> dca501073ad3b75aefab25a7adeb48577a1569f7
