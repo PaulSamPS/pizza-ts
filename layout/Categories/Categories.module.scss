@@ -1,0 +1,44 @@
+.categories {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	padding: 40px;
+
+	.categoryBlock {
+		display: flex;
+
+		.category {
+			margin-right: 10px;
+		}
+	}
+
+	.sort {
+		text-align: center;
+	}
+
+	.activeBlack {
+		color: var(--white);
+		background: var(--black);
+	}
+}
+
+@media screen and (max-width: 850px) {
+	.categories {
+		.categoryBlock {
+			display: none;
+		}
+	}
+
+	@media screen and (max-width: 500px) {
+		.categories {
+			justify-content: center;
+		}
+	}
+
+	@media screen and (max-width: 350px) {
+		.categories {
+			padding: 30px;
+		}
+	}
+}
