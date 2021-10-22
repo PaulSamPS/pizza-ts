@@ -17,34 +17,8 @@
 	font-size: 16px;
 	font-weight: bold;
 
-	.cart {
-		display: none;
-	}
-
 	&:active {
 		transform: translateY(3px);
-	}
-
-	svg {
-		width: 12px;
-		height: 12px;
-		margin-right: 8px;
-	}
-
-	i {
-		display: none;
-	}
-
-	.plus {
-		display: none;
-	}
-
-	.arrow {
-		display: none;
-	}
-
-	div {
-		display: none;
 	}
 }
 
@@ -54,14 +28,6 @@
 	color: var(--white);
 	border: 1px solid transparent;
 	background: var(--primary);
-
-	svg {
-		display: none;
-	}
-
-	.arrow {
-		display: none;
-	}
 
 	&:hover {
 		padding: 10px 35px;
@@ -91,8 +57,8 @@
 	i {
 		display: inline-block;
 
-		width: 22px;
-		height: 22px;
+		width: 23px;
+		height: 23px;
 		margin-left: 8px;
 
 		transition: all ease 0.2s;
@@ -131,14 +97,6 @@
 	border: 1px solid transparent;
 	background: var(--gray-dark);
 
-	svg {
-		display: none;
-	}
-
-	i {
-		display: none;
-	}
-
 	&:hover {
 		color: var(--white);
 		background: var(--black);
@@ -154,18 +112,10 @@
 	border: 1px solid var(--gray-light);
 	background: var(--white);
 
-	svg {
-		display: none;
-	}
-
 	.arrow {
 		display: inline-block;
 
 		transition: all ease 0.2s;
-	}
-
-	i {
-		display: none;
 	}
 
 	&:hover {
@@ -180,34 +130,5 @@
 		svg path {
 			stroke: var(--white);
 		}
-	}
-}
-
-.cart {
-	color: var(--white);
-	background: var(--primary);
-
-	.cart {
-		display: inline-block;
-
-		width: 16px;
-		height: 16px;
-		margin-left: 10px;
-	}
-
-	i {
-		display: inline-block;
-
-		font-style: normal;
-	}
-
-	div {
-		display: inline-block;
-
-		height: 20px;
-		margin-left: 10px;
-
-		opacity: 0.5;
-		border-right: 1px solid var(--white);
 	}
 }

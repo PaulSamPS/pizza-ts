@@ -3,12 +3,14 @@ import styles from './Item.module.scss'
 import {useState} from "react";
 import cn from 'classnames'
 import {Button} from "../Button/Button";
+import Plus from "../Button/plus.svg";
 
 
 
 export const Item = ({product}: ItemProps): JSX.Element => {
     const [activeSize, setActiveSize] = useState<number>(0)
     const [activeType, setActiveType] = useState<number>(0)
+    const [count, setCount] = useState<number>(0)
 
     const {id,name,imageUrl,sizes,availableTypes,price,category} = product
 
@@ -42,8 +44,10 @@ export const Item = ({product}: ItemProps): JSX.Element => {
         }
         <div className={styles.blockBottom}>
             <span className={styles.price}>от {price} p</span>
-            <Button appearance='ghost' className={styles.addBtn}>
+            <Button appearance='ghost' className={styles.addBtn} onClick={() => setCount(count +1)}>
+                <Plus/>
                 Добавить
+                <i>{count}</i>
             </Button>
         </div>
     </div>

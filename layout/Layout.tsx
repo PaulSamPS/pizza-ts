@@ -17,7 +17,7 @@ const Layout = ({children}: LayoutProps): JSX.Element => {
 export const withLayout = <T extends Record<string, unknown> & IAppContext>(Component: FunctionComponent<T>) => {
     return function withLayoutComponent(props: T): JSX.Element {
         return (
-            <AppContextProvider menu={ props.menu } product={props.product}>
+            <AppContextProvider menu={ props.menu } product={props.product} sort={props.sort}>
                 <Layout>
                     <Component { ...props }/>
                 </Layout>

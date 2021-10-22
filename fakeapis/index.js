@@ -1,9 +1,9 @@
-const menu = require('./menu.json');
-const products = require('./products.json');
-// Something more
+const menu = require('./menu.json')
+const products = require('./products.json')
+const sort = require('./sort.json')
 
 module.exports = () => ({
   menu: menu,
-  products: products
-  // Something more
-});
+  products: products,
+  sort: sort
+})

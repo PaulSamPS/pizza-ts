@@ -1,9 +1,6 @@
 import {ButtonProps} from "./Button.props"
 import styles from './Button.module.scss'
 import cn from 'classnames'
-import Plus from './plus.svg'
-import Arrow from './arrow.svg'
-import Cart from './cart.svg'
 import {ForwardedRef, forwardRef} from "react";
 
 export const Button = forwardRef(({appearance, className, children, ...props}: ButtonProps, ref: ForwardedRef<HTMLButtonElement>): JSX.Element => {
@@ -17,12 +14,7 @@ export const Button = forwardRef(({appearance, className, children, ...props}: B
         })}
                 {...props} ref={ref}
         >
-            <Arrow className={styles.arrow}/>
-            <Plus className={styles.plus}/>
             {children}
-            <div/>
-            <Cart className={styles.cart}/>
-            <i>31</i>
         </button>
     )
 })
