@@ -5,16 +5,12 @@ import cn from 'classnames'
 import {Button} from "../Button/Button";
 import Plus from "../Button/plus.svg";
 
-
-
 export const Item = ({product}: ItemProps): JSX.Element => {
     const [activeSize, setActiveSize] = useState<number>(0)
     const [activeType, setActiveType] = useState<number>(0)
     const [count, setCount] = useState<number>(0)
 
     const {id,name,imageUrl,sizes,availableTypes,price,category} = product
-
-    const priceOfSize = price[activeSize]
 
   return (
     <div className={styles.itemBlock}>
@@ -48,14 +44,14 @@ export const Item = ({product}: ItemProps): JSX.Element => {
             {
                 category === 0
                     ?
-                    <span className={styles.price}>{priceOfSize} ₽</span>
+                    <span className={styles.price}>{price[activeSize]} ₽</span>
                     :
                     <span className={styles.price}>{price} ₽</span>
             }
             <Button appearance='ghost' className={styles.addBtn} onClick={() => setCount(count +1)}>
                 <Plus/>
                 Добавить
-                <i>{count}</i>
+                {count > 0 ? <i>{count}</i> : ''}
             </Button>
         </div>
     </div>

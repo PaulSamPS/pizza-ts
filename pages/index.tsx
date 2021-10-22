@@ -3,7 +3,6 @@ import {GetStaticProps} from "next"
 import axios from "axios"
 import {Category} from "../interfaces/menu.interface"
 import {ProductModel} from "../interfaces/product.iterface";
-import {Product} from "../components";
 import {MainPageComponent} from "../page-components";
 import {Sort} from "../interfaces/sort.interface";
 

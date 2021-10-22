@@ -19,40 +19,7 @@ a {
 	box-sizing: border-box;
 }
 
-.wrapper {
-	max-width: 1400px;
-	margin: 0 auto;
 
-	border-radius: 10px;
-	background-color: var(--white);
-}
-
-.flex {
-	display: flex;
-	justify-content: space-between;
-}
-
-.logos {
-	display: flex;
-	justify-content: space-between;
-
-	padding: 40px;
-
-	border-bottom: 1px solid #EFEFEF;
-
-	@media screen and (max-width: 500px) {
-		flex-wrap: wrap;
-		gap: 30px;
-	}
-}
-
-.logoCart {
-	display: flex;
-
-	padding: 40px;
-
-	border-bottom: 1px solid #EFEFEF;
-}
 
 :root {
 	--black: #282828;

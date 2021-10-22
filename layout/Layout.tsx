@@ -3,10 +3,11 @@ import {Header} from "./Header/Header";
 import {Categories} from "./Categories/Categories";
 import {FunctionComponent} from "react";
 import {AppContextProvider, IAppContext} from "../context/app.context";
+import styles from './Layout.module.scss'
 
 const Layout = ({children}: LayoutProps): JSX.Element => {
     return (
-        <div className='wrapper'>
+        <div className={styles.wrapper}>
             <Header />
             <Categories />
             {children}
