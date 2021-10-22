@@ -7,7 +7,7 @@
     "types": [0, 1],
     "availableTypes": ["тонкое","традиционное"],
     "sizes": [25, 30, 35],
-    "price": 375,
+    "price": [375, 579, 699],
     "category": 0,
     "rating": 4
   },
@@ -19,7 +19,7 @@
     "types": [0, 1],
     "availableTypes": ["тонкое","традиционное"],
     "sizes": [25, 30, 35],
-    "price": 375,
+    "price": [375, 579, 699],
     "category": 0,
     "rating": 6
   },
@@ -31,7 +31,7 @@
     "types": [0, 1],
     "availableTypes": ["тонкое","традиционное"],
     "sizes": [25, 30, 35],
-    "price": 245,
+    "price": [375, 439, 579],
     "category": 0,
     "rating": 4
   },
@@ -43,7 +43,7 @@
     "types": [0, 1],
     "availableTypes": ["тонкое","традиционное"],
     "sizes": [25, 30, 35],
-    "price": 245,
+    "price": [375, 439, 579],
     "category": 0,
     "rating": 2
   },
@@ -55,7 +55,7 @@
     "types": [0, 1],
     "availableTypes": ["тонкое","традиционное"],
     "sizes": [25, 30, 35],
-    "price": 295,
+    "price": [295, 439, 579],
     "category": 0,
     "rating": 8
   },
@@ -67,7 +67,7 @@
     "types": [0, 1],
     "availableTypes": ["тонкое","традиционное"],
     "sizes": [25, 30, 35],
-    "price": 295,
+    "price": [295, 439, 579],
     "category": 0,
     "rating": 2
   },
@@ -79,7 +79,7 @@
     "types": [0, 1],
     "availableTypes": ["тонкое","традиционное"],
     "sizes": [26, 30, 40],
-    "price": 675,
+    "price": [375, 579, 699],
     "category": 0,
     "rating": 9
   },
@@ -91,7 +91,7 @@
     "types": [0, 1],
     "availableTypes": ["тонкое","традиционное"],
     "sizes": [26, 30, 40],
-    "price": 450,
+    "price": [325, 479, 629],
     "category": 0,
     "rating": 10
   },
@@ -103,7 +103,7 @@
     "types": [0, 1],
     "availableTypes": ["тонкое","традиционное"],
     "sizes": [26, 30, 40],
-    "price": 395,
+    "price": [375, 579, 699],
     "category": 0,
     "rating": 10
   },
@@ -115,7 +115,7 @@
     "types": [0, 1],
     "availableTypes": ["тонкое","традиционное"],
     "sizes": [26, 30, 40],
-    "price": 285,
+    "price": [375, 579, 699],
     "category": 0,
     "rating": 7
   },
@@ -127,7 +127,7 @@
     "types": [0, 1],
     "availableTypes": ["тонкое","традиционное"],
     "sizes": [26, 30, 40],
-    "price": 375,
+    "price": [375, 579, 699],
     "category": 0,
     "rating": 4
   },

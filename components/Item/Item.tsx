@@ -14,6 +14,8 @@ export const Item = ({product}: ItemProps): JSX.Element => {
 
     const {id,name,imageUrl,sizes,availableTypes,price,category} = product
 
+    const priceOfSize = price[activeSize]
+
   return (
     <div className={styles.itemBlock}>
         <img src={imageUrl} alt="продукт"/>
@@ -43,7 +45,13 @@ export const Item = ({product}: ItemProps): JSX.Element => {
             : ''
         }
         <div className={styles.blockBottom}>
-            <span className={styles.price}>от {price} p</span>
+            {
+                category === 0
+                    ?
+                    <span className={styles.price}>{priceOfSize} ₽</span>
+                    :
+                    <span className={styles.price}>{price} ₽</span>
+            }
             <Button appearance='ghost' className={styles.addBtn} onClick={() => setCount(count +1)}>
                 <Plus/>
                 Добавить

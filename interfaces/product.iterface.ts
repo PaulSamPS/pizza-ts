@@ -6,7 +6,7 @@ export interface ProductModel {
     types: number[]
     availableTypes: string[]
     sizes: number[]
-    price: number
+    price: number[]
     category: number
     rating: number
     title: string

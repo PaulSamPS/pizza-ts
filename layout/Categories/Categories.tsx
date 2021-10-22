@@ -47,7 +47,7 @@ export const Categories = ({...props}: CategoriesProps): JSX.Element => {
           {menuShow &&
           <div className={styles.mobileCategory}>
               <ul className={styles.mobileItems}>
-                  {menu.map((m,index) => <li className={cn(styles.menuItem, {
+                  {menu.map((m,index) => <li key={m.id} className={cn(styles.menuItem, {
                       [styles.activeItem]: activeItem === index
                   })} onClick={() => onSelectedItemsMobile(index)}>
                       {m.name}
