@@ -106,29 +106,15 @@
 .gray {
 	padding: 10px 30px 10px 20px;
 
-	transition: all ease 0.2s;
+	transition: all ease .2s;
 
-	color: var(--gray-light);
-	border: 1px solid var(--gray-light);
+	color: var(--gray);
+	border: 1px solid var(--gray);
 	background: var(--white);
-
-	.arrow {
-		display: inline-block;
-
-		transition: all ease 0.2s;
-	}
 
 	&:hover {
 		color: var(--white);
 		border: 1px solid var(--black);
 		background: var(--black);
-
-		.arrow {
-			transform: translateX(-5px);
-		}
-
-		svg path {
-			stroke: var(--white);
-		}
 	}
 }

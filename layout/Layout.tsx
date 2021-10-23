@@ -4,11 +4,26 @@ import {Categories} from "./Categories/Categories";
 import {FunctionComponent} from "react";
 import {AppContextProvider, IAppContext} from "../context/app.context";
 import styles from './Layout.module.scss'
+import {Button} from "../components";
+import CartIcon from "./Header/cart.svg";
+import Link from "next/link";
 
 const Layout = ({children}: LayoutProps): JSX.Element => {
     return (
         <div className={styles.wrapper}>
-            <Header />
+            <div className={styles.header}>
+                <Header />
+                <Link href="/cart">
+                    <a>
+                        <Button appearance='cart' className={styles.cart} >
+                            520 P
+                            <div/>
+                            <CartIcon className={styles.cartIcon}/>
+                            <i>3</i>
+                        </Button>
+                    </a>
+                </Link>
+            </div>
             <Categories />
             {children}
         </div>

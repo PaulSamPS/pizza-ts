@@ -17,16 +17,6 @@ export const Header = ({className, ...props}: HeaderProps): JSX.Element => {
                       <h1>Pizza</h1>
                   </a>
               </Link>
-              <Link href="/cart">
-                  <a>
-                      <Button appearance='cart' className={styles.cart} >
-                          520 P
-                          <div/>
-                          <CartIcon className={styles.cartIcon}/>
-                          <i>3</i>
-                      </Button>
-                  </a>
-              </Link>
           </div>
       </div>
   )
