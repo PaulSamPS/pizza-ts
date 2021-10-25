@@ -139,7 +139,7 @@
     "types": [3],
     "sizes": [0.3],
     "price": 159,
-    "category": 3,
+    "category": 1,
     "rating": 4
   },
   {
@@ -150,7 +150,7 @@
     "types": [3],
     "sizes": [0.5],
     "price": 129,
-    "category": 3,
+    "category": 1,
     "rating": 4
   },
   {
@@ -161,7 +161,7 @@
     "types": [3],
     "sizes": [0.5],
     "price": 289,
-    "category": 3,
+    "category": 1,
     "rating": 4
   },
   {
@@ -172,7 +172,7 @@
     "types": [3],
     "sizes": [0],
     "price": 89,
-    "category": 3,
+    "category": 1,
     "rating": 4
   },
   {
@@ -183,7 +183,7 @@
     "types": [3],
     "sizes": [0],
     "price": 89,
-    "category": 3,
+    "category": 1,
     "rating": 4
   },
   {
@@ -194,7 +194,7 @@
     "types": [3],
     "sizes": [0],
     "price": 69,
-    "category": 3,
+    "category": 1,
     "rating": 4
   },
   {
@@ -205,7 +205,7 @@
     "types": [3],
     "sizes": [0],
     "price": 159,
-    "category": 3,
+    "category": 1,
     "rating": 4
   },
   {
@@ -216,7 +216,7 @@
     "types": [3],
     "sizes": [0],
     "price": 159,
-    "category": 3,
+    "category": 1,
     "rating": 4
   },
   {
@@ -227,7 +227,7 @@
     "types": [3],
     "sizes": [0],
     "price": 129,
-    "category": 3,
+    "category": 1,
     "rating": 4
   },
   {
@@ -238,7 +238,7 @@
     "types": [3],
     "sizes": [0],
     "price": 195,
-    "category": 3,
+    "category": 1,
     "rating": 4
   },
   {
@@ -249,7 +249,7 @@
     "types": [3],
     "sizes": [0],
     "price": 195,
-    "category": 3,
+    "category": 1,
     "rating": 4
   },
   {
@@ -260,7 +260,7 @@
     "types": [3],
     "sizes": [0],
     "price": 289,
-    "category": 3,
+    "category": 1,
     "rating": 4
   },
   {
@@ -271,7 +271,7 @@
     "types": [3],
     "sizes": [0],
     "price": 89,
-    "category": 3,
+    "category": 1,
     "rating": 4
   },
   {
@@ -282,7 +282,7 @@
     "types": [3],
     "sizes": [0],
     "price": 89,
-    "category": 3,
+    "category": 1,
     "rating": 4
   },
   {
@@ -292,7 +292,7 @@
     "title": "Смородиновый молочный коктейль",
     "types": [3],
     "price": 159,
-    "category": 3,
+    "category": 1,
     "rating": 4
   },
   {
@@ -303,7 +303,7 @@
     "types": [3],
     "sizes": [0],
     "price": 89,
-    "category": 3,
+    "category": 1,
     "rating": 4
   },
   {
@@ -314,7 +314,7 @@
     "types": [3],
     "sizes": [0.33],
     "price": 159,
-    "category": 3,
+    "category": 1,
     "rating": 4
   },
   {
@@ -325,7 +325,7 @@
     "types": [3],
     "capacity": "0.33 л",
     "price": 159,
-    "category": 3,
+    "category": 1,
     "rating": 4
   },
   {
@@ -336,7 +336,7 @@
     "types": [3],
     "capacity": "0.33 л",
     "price": 179,
-    "category": 3,
+    "category": 1,
     "rating": 4
   },
   {
@@ -347,7 +347,7 @@
     "types": [3],
     "sizes": [0],
     "price": 129,
-    "category": 3,
+    "category": 1,
     "rating": 4
   },
   {
@@ -357,7 +357,7 @@
     "types": [3],
     "capacity": "0.5 л",
     "price": 99,
-    "category": 1,
+    "category": 2,
     "rating": 4
   },
   {
@@ -367,7 +367,7 @@
     "types": [3],
     "capacity": "0.5 л",
     "price": 99,
-    "category": 1,
+    "category": 2,
     "rating": 4
   },
   {
@@ -377,7 +377,7 @@
     "types": [3],
     "capacity": "0.5 л",
     "price": 99,
-    "category": 1,
+    "category": 2,
     "rating": 4
   },
   {
@@ -387,7 +387,7 @@
     "types": [3],
     "capacity": "0.5 л",
     "price": 99,
-    "category": 1,
+    "category": 2,
     "rating": 4
   },
   {
@@ -397,7 +397,7 @@
     "types": [3],
     "capacity": "0.5 л",
     "price": 99,
-    "category": 1,
+    "category": 2,
     "rating": 4
   },
   {
@@ -407,7 +407,7 @@
     "types": [3],
     "capacity": "0.5 л",
     "price": 99,
-    "category": 1,
+    "category": 2,
     "rating": 4
   },
   {
@@ -417,7 +417,7 @@
     "types": [3],
     "capacity": "0.5 л",
     "price": 99,
-    "category": 1,
+    "category": 2,
     "rating": 4
   },
   {
@@ -427,7 +427,7 @@
     "types": [3],
     "capacity": "0.33 л",
     "price": 79,
-    "category": 1,
+    "category": 2,
     "rating": 4
   },
   {
@@ -437,7 +437,7 @@
     "types": [3],
     "capacity": "0.5 л",
     "price": 99,
-    "category": 1,
+    "category": 2,
     "rating": 4
   },
   {
@@ -447,7 +447,7 @@
     "types": [3],
     "capacity": "0.5 л",
     "price": 99,
-    "category": 1,
+    "category": 2,
     "rating": 4
   },
   {
@@ -457,7 +457,7 @@
     "types": [3],
     "capacity": "0.5 л",
     "price": 99,
-    "category": 1,
+    "category": 2,
     "rating": 4
   },
   {
@@ -467,7 +467,7 @@
     "types": [3],
     "capacity": "1 л",
     "price": 159,
-    "category": 1,
+    "category": 2,
     "rating": 4
   },
   {
@@ -477,7 +477,7 @@
     "types": [3],
     "capacity": "1 л",
     "price": 159,
-    "category": 1,
+    "category": 2,
     "rating": 4
   },
   {
@@ -487,7 +487,7 @@
     "types": [3],
     "capacity": "1 л",
     "price": 159,
-    "category": 1,
+    "category": 2,
     "rating": 4
   },
   {
@@ -497,7 +497,7 @@
     "types": [3],
     "capacity": "0.5 л",
     "price": 69,
-    "category": 1,
+    "category": 2,
     "rating": 4
   },
   {
@@ -507,7 +507,7 @@
     "title": "Газированный напиток с замороженными ягодами черной смородины, 0.3 л",
     "types": [3],
     "price": 129,
-    "category": 1,
+    "category": 2,
     "rating": 4
   },
   {
@@ -517,7 +517,7 @@
     "types": [3],
     "capacity": "0.45 л",
     "price": 99,
-    "category": 1,
+    "category": 2,
     "rating": 4
   },
   {
@@ -527,7 +527,7 @@
     "types": [3],
     "capacity": "0.45 л",
     "price": 99,
-    "category": 1,
+    "category": 2,
     "rating": 4
   },
   {
@@ -537,7 +537,7 @@
     "types": [3],
     "capacity": "0.45 л",
     "price": 99,
-    "category": 1,
+    "category": 2,
     "rating": 4
   },
   {
@@ -547,7 +547,7 @@
     "title": "Горячий какао с молоком, молочной пенкой и ванильным маршмеллоу 0.3 л",
     "types": [3],
     "price": 115,
-    "category": 1,
+    "category": 2,
     "rating": 4
   },
   {
@@ -557,7 +557,7 @@
     "title": "Горячий напиток на основе эспрессо 0.4 л",
     "types": [3],
     "price": 85,
-    "category": 1,
+    "category": 2,
     "rating": 4
   },
   {
@@ -567,7 +567,7 @@
     "title": "Горячий напиток на основе эспрессо со вспененным молоком и сиропом со вкусом ванили 0.3 л",
     "types": [3],
     "price": 135,
-    "category": 1,
+    "category": 2,
     "rating": 4
   },
   {
@@ -577,7 +577,7 @@
     "title": "Горячий напиток на основе эспрессо со вспененным молоком и сиропом со вкусом карамели 0.3 л",
     "types": [3],
     "price": 135,
-    "category": 1,
+    "category": 2,
     "rating": 4
   },
   {
@@ -587,7 +587,7 @@
     "title": "Горячий напиток на основе эспрессо со вспененным молоком 0.4 л",
     "types": [3],
     "price": 135,
-    "category": 1,
+    "category": 2,
     "rating": 4
   },
   {
@@ -597,7 +597,7 @@
     "title": "Горячий напиток на основе эспрессо с увеличенной порцией молока и сиропом со вкусом фундука 0.3 л",
     "types": [3],
     "price": 135,
-    "category": 1,
+    "category": 2,
     "rating": 4
   },
   {
@@ -607,7 +607,7 @@
     "title": "Горячий напиток на основе эспрессо с увеличенной порцией молока 0.4 л",
     "types": [3],
     "price": 135,
-    "category": 1,
+    "category": 2,
     "rating": 4
   }
 ]

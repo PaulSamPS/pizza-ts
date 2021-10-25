@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Logo from "../../layout/Header/logo.svg";
 import {Button} from "../../components";
 import Arrow from "./arrow.svg";
 import styles from "./CartPageComponent.module.scss"
@@ -45,7 +44,7 @@ export const CartPageComponent = (): JSX.Element => {
                         <p>Всего пицц: </p>
                         <span>3 шт.</span>
                     </div>
-                    <div className={styles.totalSum}>
+                    <div className={styles.totalOrder}>
                         <p>Сумма заказа: </p>
                         <span>900 ₽</span>
                     </div>
@@ -60,7 +59,7 @@ export const CartPageComponent = (): JSX.Element => {
                         </a>
                     </Link>
                  <Button appearance="primary" className={styles.pay}>
-                     Оплатить сейчас
+                     Оформить заказ
                  </Button>
                 </div>
             </div>

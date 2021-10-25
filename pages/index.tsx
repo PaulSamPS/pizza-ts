@@ -20,7 +20,7 @@ export default withLayout(Home)
 export const getStaticProps: GetStaticProps<HomeProps> = async () => {
   const {data: menu} = await axios.get<Category[]>(process.env.NEXT_PUBLIC_DOMAIN + '/menu')
   const {data: product} = await axios.get<ProductModel[]>(process.env.NEXT_PUBLIC_DOMAIN + '/products')
-  const {data: sort} = await axios.get<ProductModel[]>(process.env.NEXT_PUBLIC_DOMAIN + '/sort')
+  const {data: sort} = await axios.get<Sort[]>(process.env.NEXT_PUBLIC_DOMAIN + '/sort')
   return {
     props: {
       menu,

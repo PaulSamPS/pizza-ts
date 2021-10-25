@@ -1,24 +1,52 @@
-.grid {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	justify-items: center;
-	gap: 50px 0;
-
-	padding: 40px;
-
-	@media screen and (max-width: 1300px) {
-		grid-template-columns: 1fr 1fr 1fr;
+.productBlock {
+	.title {
+		margin: 0;
+		padding: 40px;
+		text-align: center;
+		font-weight: 700;
+		font-size: 32px;
 	}
 
-	@media screen and (max-width: 1000px) {
-		grid-template-columns: 1fr 1fr;
-	}
+	.grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		justify-items: center;
+		gap: 50px 0;
 
-	@media screen and (max-width: 750px) {
-		grid-template-columns: 1fr;
-	}
+		padding: 40px;
 
-	@media screen and (max-width: 320px) {
-		padding: 40px 0 40px 0;
+		@media screen and (max-width: 1300px) {
+			grid-template-columns: 1fr 1fr 1fr;
+		}
+
+		@media screen and (max-width: 1000px) {
+			grid-template-columns: 1fr 1fr;
+		}
+
+		@media screen and (max-width: 750px) {
+			grid-template-columns: 1fr;
+		}
+
+		@media screen and (max-width: 320px) {
+			padding: 40px 0 40px 0;
+		}
+	}
+}
+
+.up {
+	position: fixed;
+	right: 15%;
+	bottom: 80px;
+
+	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.05);
+
+	button {
+		background: var(--primary);
+		border: 0;
+		border-radius: 10px;
+		width: 40px;
+		height: 40px;
+
+		cursor: pointer;
 	}
 }

@@ -47,4 +47,11 @@
       }
     }
   }
+  @media screen and(max-width: 400px){
+    .header {
+      grid-template-columns: 1fr;
+      gap: 30px;
+      justify-items: center;
+    }
+  }
 }

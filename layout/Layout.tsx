@@ -24,7 +24,6 @@ const Layout = ({children}: LayoutProps): JSX.Element => {
                     </a>
                 </Link>
             </div>
-            <Categories />
             {children}
         </div>
     )

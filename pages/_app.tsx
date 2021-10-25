@@ -2,6 +2,8 @@ import '../styles/globals.scss'
 import React from "react";
 import { AppProps } from 'next/dist/shared/lib/router/router'
 import Head from 'next/head'
+import {Provider} from "react-redux";
+import store from "../redux/store";
 
 function MyApp({ Component, pageProps }: AppProps): JSX.Element {
   return <>
@@ -13,7 +15,9 @@ function MyApp({ Component, pageProps }: AppProps): JSX.Element {
       <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
       <meta property="og:locale" content="ru_RU" />
     </Head>
-    <Component {...pageProps} />
+    <Provider store={store}>
+      <Component {...pageProps} />
+    </Provider>
   </>
 }
 

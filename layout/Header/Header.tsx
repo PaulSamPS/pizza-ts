@@ -3,9 +3,6 @@ import styles from './Header.module.scss'
 import {HeaderProps} from "./Header.props";
 import Link from "next/link";
 import cn from 'classnames'
-import {Button} from "../../components";
-import CartIcon from './cart.svg'
-
 
 export const Header = ({className, ...props}: HeaderProps): JSX.Element => {
   return (

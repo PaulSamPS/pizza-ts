@@ -1,6 +1,6 @@
 import {ItemProps} from "./Item.props";
 import styles from './Item.module.scss'
-import {useState} from "react";
+import {useRef, useState} from "react";
 import cn from 'classnames'
 import {Button} from "../Button/Button";
 import Plus from "../Button/plus.svg";
@@ -9,6 +9,7 @@ export const Item = ({product}: ItemProps): JSX.Element => {
     const [activeSize, setActiveSize] = useState<number>(0)
     const [activeType, setActiveType] = useState<number>(0)
     const [count, setCount] = useState<number>(0)
+    const categoryRef = useRef<HTMLDivElement>(null)
 
     const {id,name,imageUrl,sizes,availableTypes,price,category} = product
 
