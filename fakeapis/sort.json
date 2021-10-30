@@ -1,17 +1,12 @@
 [
   {
     "id": 1,
-    "name": "популярности",
-    "type": "popular"
-  },
-  {
-    "id": 2,
-    "name": "цене",
+    "name": "возрастанию цены",
     "type": "price"
   },
   {
-    "id": 3,
-    "name": "алфавиту",
-    "type": "alphabet"
+    "id": 2,
+    "name": "убыванию цены",
+    "type": "price"
   }
 ]

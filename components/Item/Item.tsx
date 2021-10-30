@@ -1,17 +1,28 @@
 import {ItemProps} from "./Item.props";
 import styles from './Item.module.scss'
-import {useRef, useState} from "react";
+import {useState} from "react";
 import cn from 'classnames'
 import {Button} from "../Button/Button";
 import Plus from "../Button/plus.svg";
 
-export const Item = ({product}: ItemProps): JSX.Element => {
+export const Item = ({product, onAddItemToCart}: ItemProps): JSX.Element => {
+    const {id,name,imageUrl,sizes,availableTypes,price,category} = product
+
     const [activeSize, setActiveSize] = useState<number>(0)
     const [activeType, setActiveType] = useState<number>(0)
     const [count, setCount] = useState<number>(0)
-    const categoryRef = useRef<HTMLDivElement>(null)
 
-    const {id,name,imageUrl,sizes,availableTypes,price,category} = product
+    const onAddItem = () => {
+        const obj = {
+            id,
+            name,
+            imageUrl,
+            price: price[activeSize],
+            sizes: sizes[activeSize],
+            type: availableTypes[activeType]
+        }
+        onAddItemToCart(obj)
+    }
 
   return (
     <div className={styles.itemBlock}>
@@ -49,7 +60,7 @@ export const Item = ({product}: ItemProps): JSX.Element => {
                     :
                     <span className={styles.price}>{price} ₽</span>
             }
-            <Button appearance='ghost' className={styles.addBtn} onClick={() => setCount(count +1)}>
+            <Button appearance='ghost' className={styles.addBtn} onClick={onAddItem}>
                 <Plus/>
                 Добавить
                 {count > 0 ? <i>{count}</i> : ''}

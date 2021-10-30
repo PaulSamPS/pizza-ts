@@ -35,7 +35,7 @@
 
 .up {
 	position: fixed;
-	right: 15%;
+	right: 30px;
 	bottom: 80px;
 
 	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.05);
@@ -48,5 +48,9 @@
 		height: 40px;
 
 		cursor: pointer;
+
+		&:hover {
+			background: var(--primary-hover);
+		}
 	}
 }

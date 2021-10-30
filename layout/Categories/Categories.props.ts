@@ -4,4 +4,6 @@ export interface CategoriesProps extends DetailedHTMLProps<HTMLAttributes<HTMLDi
     scrollToPizza: () => void
     scrollToDesert: () => void
     scrollToDrink: () => void
+    upPrice: () => void
+    downPrice: () => void
 }

@@ -9,8 +9,10 @@ import PlusIcon from "./plus.svg"
 import RemoveItem from "./delete.svg"
 import {useState} from "react";
 import {Header} from "../../layout/Header/Header";
+import {useTypeSelector} from "../../hooks/useTypeSelector";
 
 export const CartPageComponent = (): JSX.Element => {
+    const {totalPrice,totalCount} = useTypeSelector(({cart}) => cart)
     const [count,setCount] = useState<number>(0)
 
     return (
@@ -42,11 +44,11 @@ export const CartPageComponent = (): JSX.Element => {
                 <div className={styles.totalBlock}>
                     <div className={styles.totalItems}>
                         <p>Всего пицц: </p>
-                        <span>3 шт.</span>
+                        <span>{totalCount} шт.</span>
                     </div>
                     <div className={styles.totalOrder}>
                         <p>Сумма заказа: </p>
-                        <span>900 ₽</span>
+                        <span>{totalPrice.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ').concat(' ₽')}</span>
                     </div>
                 </div>
                 <div className={styles.cartBottom}>

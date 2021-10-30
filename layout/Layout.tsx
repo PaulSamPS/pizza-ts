@@ -1,14 +1,15 @@
 import {LayoutProps} from "./Layout.props";
 import {Header} from "./Header/Header";
-import {Categories} from "./Categories/Categories";
 import {FunctionComponent} from "react";
 import {AppContextProvider, IAppContext} from "../context/app.context";
 import styles from './Layout.module.scss'
 import {Button} from "../components";
 import CartIcon from "./Header/cart.svg";
 import Link from "next/link";
+import {useTypeSelector} from "../hooks/useTypeSelector";
 
 const Layout = ({children}: LayoutProps): JSX.Element => {
+    const {totalPrice,totalCount} = useTypeSelector(({cart}) => cart)
     return (
         <div className={styles.wrapper}>
             <div className={styles.header}>
@@ -16,10 +17,10 @@ const Layout = ({children}: LayoutProps): JSX.Element => {
                 <Link href="/cart">
                     <a>
                         <Button appearance='cart' className={styles.cart} >
-                            520 P
+                            {totalPrice.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ').concat(' ₽')}
                             <div/>
                             <CartIcon className={styles.cartIcon}/>
-                            <i>3</i>
+                            <i>{totalCount}</i>
                         </Button>
                     </a>
                 </Link>

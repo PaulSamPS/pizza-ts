@@ -2,15 +2,16 @@ import Arrow from './arrow.svg'
 import styles from './Sort.module.scss'
 import {SortProps} from "./Sort.props";
 import cn from 'classnames'
-import {useContext, useEffect, useRef, useState} from "react";
+import React, {useCallback, useContext, useEffect, useRef, useState} from "react";
 import {AppContext} from "../../context/app.context";
 
-export const Sort = ({className, ...props}: SortProps): JSX.Element => {
+
+export const Sort = React.memo(({upPrice,downPrice,className, ...props}: SortProps): JSX.Element => {
     const sortRef = useRef<null>(null)
     const {sort} = useContext(AppContext)
     const [showModal, setShowModal] = useState<boolean>(false)
     const [activeItem, setActiveItem] = useState<number>(0)
-    const activeLabel = sort[activeItem]
+    const activeLabel = sort.map(s => s.name)
 
     useEffect(() => {
         document.body.addEventListener('click', handleOutsideClick)
@@ -32,6 +33,13 @@ export const Sort = ({className, ...props}: SortProps): JSX.Element => {
         }
     }
 
+    const sortProduct = (id) => {
+        return (
+            id === 1 ? upPrice :
+            id === 2 ? downPrice : undefined
+        )
+    }
+
     return (
         <div ref={sortRef} className={cn(styles.sort, className)} {...props}>
             <Arrow className={cn(styles.arrow,{
@@ -39,7 +47,7 @@ export const Sort = ({className, ...props}: SortProps): JSX.Element => {
             })}/>
             <p className={styles.sortTitle}>Сортироква по:</p>
             <p className={styles.selected} onClick={showModalPopUp}>
-                {activeLabel.name}
+                {activeLabel[activeItem]}
             </p>
             {showModal &&
             <ul className={styles.modal}>
@@ -49,11 +57,11 @@ export const Sort = ({className, ...props}: SortProps): JSX.Element => {
                     })}
                         key={s.id}
                         onClick={() => onSelectItem(index)}>
-                        {s.name}
+                        <span onClick={sortProduct(s.id)}>{s.name}</span>
                     </li>
                 )}
             </ul>
             }
         </div>
     )
-}
+})

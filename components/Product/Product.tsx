@@ -1,12 +1,13 @@
 import {ProductProps} from "./Product.props";
 import styles from './Product.module.scss'
 import {Item} from "../Item/Item";
-import {useEffect, useRef} from "react";
+import {useEffect,useRef} from "react";
 import {Categories} from "../../layout/Categories/Categories";
 import Up from './up.svg'
 import {useScrollY} from "../../hooks/useScroll";
 import {motion, useAnimation} from "framer-motion";
-
+import {useDispatch} from "react-redux";
+import {ADD_PIZZA_TO_CART} from "../../redux/reducers/cart";
 
 export const Product = ({product, className, ...props}: ProductProps): JSX.Element => {
     const pizzaRef = useRef<HTMLDivElement>(null)
@@ -14,22 +15,7 @@ export const Product = ({product, className, ...props}: ProductProps): JSX.Eleme
     const drinkRef = useRef<HTMLDivElement>(null)
     const y = useScrollY()
     const controls = useAnimation()
-
-    const title = [
-        {
-            name: 'Пиццы',
-            category: 0
-        },
-        {
-            name: 'Десерты',
-            category: 1
-        },
-        {
-            name: 'Напитки',
-            category: 2
-        }
-    ]
-
+    const dispatch = useDispatch()
 
     useEffect(() => {
         controls.start({ opacity: y/ document.body.scrollHeight })
@@ -66,13 +52,33 @@ export const Product = ({product, className, ...props}: ProductProps): JSX.Eleme
         drinkRef.current?.focus()
     }
 
+    const upPrice = () => {
+      product.sort((a, b) => a.price > b.price ? 1 : -1)
+    }
+
+    const downPrice = () => {
+        product.sort((a, b) => a.price > b.price ? -1 : 1)
+    }
+    const handleAddPizza = (obj) => {
+        dispatch({
+            type: ADD_PIZZA_TO_CART,
+            payload: obj
+        })
+    }
+
     return (
         <div {...props} className={styles.product}>
-            <Categories scrollToPizza={scrollToPizza} scrollToDesert={scrollToDesert} scrollToDrink={scrollToDrink}/>
+            <Categories
+                scrollToPizza={scrollToPizza}
+                scrollToDesert={scrollToDesert}
+                scrollToDrink={scrollToDrink}
+                upPrice={upPrice}
+                downPrice={downPrice}
+            />
             <div className={styles.productBlock}>
                 <h1 className={styles.title} ref={pizzaRef}>Пиццы</h1>
                 <div className={styles.grid}>
-                    {product.map(p => p.category === 0 ? <Item key={p.id} product={p}/>: '')}
+                    {product.map(p => p.category === 0 ? <Item onAddItemToCart={handleAddPizza} key={p.id} product={p}/>: '')}
                 </div>
             </div>
             <div className={styles.productBlock}>
