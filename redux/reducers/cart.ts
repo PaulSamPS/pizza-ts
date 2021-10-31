@@ -1,9 +1,8 @@
-import {any} from "prop-types";
 
 export const ADD_PIZZA_TO_CART = 'ADD_PIZZA_TO_CART'
 
 const initialState = {
-    items: {} as [],
+    items: {} ,
     totalPrice: 0,
     totalCount: 0
 }

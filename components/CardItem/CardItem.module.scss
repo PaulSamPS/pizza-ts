@@ -1,0 +1,110 @@
+.cardItem {
+  display: grid;
+  grid-template-columns: 80px 1fr auto auto 32px;
+  grid-template-areas: "image titleIcon count sum remove";
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  border-bottom: 1px solid var(--gray-light);
+  padding: 30px 0;
+  @media screen and(max-width: 1000px) {
+    img {
+      margin-left: 13px;
+    }
+    grid-template-columns: auto 1fr auto auto auto;
+    grid-template-areas:
+                "image titleIcon titleIcon titleIcon remove"
+                "count count count sum sum";
+
+    .sum {
+      display: grid;
+      justify-items: right;
+    }
+
+    .remove {
+      margin-bottom: 12px;
+    }
+  }
+  @media screen and(max-width:600px) {
+    img {
+      margin-left: 0;
+    }
+    grid-template-columns: 1fr auto;
+    grid-template-areas:
+              "image remove"
+              "titleIcon titleIcon"
+              "count sum";
+
+    .remove {
+      margin-bottom: 0;
+      display: grid;
+      justify-items: right;
+    }
+
+    .sum {
+      width: auto!important;
+    }
+  }
+
+  .image {
+    grid-area: image;
+    width: 80px;
+    height: 80px;
+  }
+
+  .titleItem {
+    grid-area: titleIcon;
+
+    h2 {
+      margin: 0;
+    }
+
+    p {
+      margin: 0;
+      font-size: 13px;
+      color: var(--gray);
+    }
+  }
+
+  .count {
+    grid-area: count;
+    display: flex;
+    align-items: center;
+
+    svg {
+      cursor: pointer;
+    }
+
+    .countItem {
+      text-align: center;
+      width: 40px;
+      font-weight: 700;
+    }
+  }
+
+  .sum {
+    grid-area: sum;
+    width: 200px;
+    font-weight: 700;
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .remove {
+    grid-area: remove;
+    cursor: pointer;
+
+    circle, path {
+      transition: all ease .2s;
+    }
+
+    &:hover {
+      circle {
+        stroke: var(--black);
+      }
+      path {
+        fill: var(--black);
+      }
+    }
+  }
+}

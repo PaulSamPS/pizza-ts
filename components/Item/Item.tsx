@@ -5,14 +5,15 @@ import cn from 'classnames'
 import {Button} from "../Button/Button";
 import Plus from "../Button/plus.svg";
 
-export const Item = ({product, onAddItemToCart}: ItemProps): JSX.Element => {
+export const Item = ({product, onAddItemToCart,addedCount}: ItemProps): JSX.Element => {
     const {id,name,imageUrl,sizes,availableTypes,price,category} = product
+
 
     const [activeSize, setActiveSize] = useState<number>(0)
     const [activeType, setActiveType] = useState<number>(0)
     const [count, setCount] = useState<number>(0)
 
-    const onAddItem = () => {
+    const onAddPizza = () => {
         const obj = {
             id,
             name,
@@ -21,7 +22,26 @@ export const Item = ({product, onAddItemToCart}: ItemProps): JSX.Element => {
             sizes: sizes[activeSize],
             type: availableTypes[activeType]
         }
+
         onAddItemToCart(obj)
+    }
+
+    const onAddItem = () => {
+        const obj = {
+            id,
+            name,
+            imageUrl,
+            price
+        }
+
+        onAddItemToCart(obj)
+    }
+
+    const handleAddProducts = () => {
+        return (
+            category === 0 ? onAddPizza():
+            category !==0 ? onAddItem() : ''
+        )
     }
 
   return (
@@ -60,10 +80,10 @@ export const Item = ({product, onAddItemToCart}: ItemProps): JSX.Element => {
                     :
                     <span className={styles.price}>{price} ₽</span>
             }
-            <Button appearance='ghost' className={styles.addBtn} onClick={onAddItem}>
+            <Button appearance='ghost' className={styles.addBtn} onClick={handleAddProducts}>
                 <Plus/>
                 Добавить
-                {count > 0 ? <i>{count}</i> : ''}
+                {addedCount && <i>{addedCount}</i>}
             </Button>
         </div>
     </div>
